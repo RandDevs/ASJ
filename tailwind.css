@@ -2,14 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+	.nav-item {
+		@apply font-semibold text-base hover:bg-slate-900 transition-all py-2 px-2 rounded-lg;
+	}
+
+	.container-article {
+		@apply flex flex-wrap justify-center content-start w-full
+	}
+
+	.article {
+	@apply w-40 bg-slate-300 h-60 m-1 rounded-md overflow-hidden relative
+	}
+
+	.container-title {
+	@apply z-20 absolute top-0 w-full h-full flex items-center p-2 glass
+	}
+
+	.title {
+	@apply w-full h-full font-bold text-base text-slate-800 text-center leading-relaxed
+	}
+}
+
 @layer utilities {
 	.glass {
-/* From https://css.glass */
-background: rgba(255, 255, 255, 0.18);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6.2px);
--webkit-backdrop-filter: blur(6.2px);
-border: 1px solid rgba(255, 255, 255, 0.02);
+		background: rgba(255, 255, 255, 0.18);
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(6.2px);
+		-webkit-backdrop-filter: blur(6.2px);
 	}
 }
