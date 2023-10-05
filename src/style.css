@@ -779,16 +779,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:max-w-\[\] {
-    max-width: ;
-  }
-
   .md\:max-w-\[200px\] {
     max-width: 200px;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
   }
 
   .md\:px-10 {
